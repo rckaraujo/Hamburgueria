@@ -1,8 +1,8 @@
 
 /* Reset de estilos */
 * {
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 02px;
     box-sizing: border-box;
     background-color: black;
     color: #fff;
@@ -17,11 +17,12 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
+    }
   
   header {
-    background-color: #352a2a;
+    background-color: #000000;
     align-items: center;
+    justify-items: center;
   }
   
   .search-container {
@@ -57,27 +58,34 @@
   
 
   .logo {
+    display: grid;
     font-size: 24px;
     padding: 10px;
-    align-items: flex-start;
-  }
-  
+    align-items: center;
+    justify-items: center;
+
+   }
+
+ 
   .menu {
     list-style: none;
-    display: flex;
+    display:grid ;
+    grid-auto-flow: column;
     color: white;
 
   }
   
   .menu li {
     margin-right: 20px;
-
+    justify-items: center;
+    align-items: center;
   }
   
   .menu li a {
     text-decoration: none;
     color:#fff;
-
+    justify-items: center;
+    align-items: center;
   }
   
   .hero {
@@ -96,6 +104,8 @@
   
   .hero p {
     font-size: 18px;
+    align-items: end;
+    justify-items: center;
     
   }
   
@@ -108,13 +118,15 @@
   
   footer p {
     font-size: 14px;
-  }
+    background-color: #333;
+    }
   
   .search-container {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
     grid-template-columns: 1fr auto;
+    justify-items: center;
   }
   
   .search-input {
